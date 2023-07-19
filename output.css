@@ -71,6 +71,16 @@ h4 {
   text-transform: capitalize;
 }
 
+h5 {
+  /* Box Title */
+  font-family: Poppins;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem; /* 118.182% */
+  text-transform: capitalize;
+}
+
 p {
   color: var(--body-text, #324A6D);
   /* Body Text */
@@ -263,6 +273,27 @@ p {
   object-position: center;
 }
 
+/*** Menu ***/
+#menu {
+  margin: 6rem 0;
+}
+#menu h2 {
+  margin-bottom: 4rem;
+}
+#menu .menu-items {
+  margin-bottom: 4rem;
+}
+#menu .menu-note {
+  color: #F98B7C;
+  font-family: Poppins;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem; /* 118.182% */
+  text-transform: capitalize;
+  margin-top: 3rem;
+}
+
 /**
 * Footer Styles
 */
@@ -305,6 +336,12 @@ p {
   }
   #cta p {
     padding: 0 5rem;
+  }
+  #menu-banner .col-lg-6:first-child {
+    padding-left: 8rem;
+  }
+  #menu-banner .col-lg-6:first-child p {
+    width: 50%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 991px) {
