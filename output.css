@@ -463,31 +463,32 @@ Crepes
   }
 
   .menu-hero-right-col img {
-    max-width: 100%; /* Adjust hero image to full width for mobile */
+    max-width: 100%; 
   }
 
   .menu-section {
-    margin-top: 3rem; /* Reduce top margin for mobile */
-    margin-bottom: 3rem; /* Reduce bottom margin for mobile */
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
     flex-direction: column;
     width: 90%;
   }
 
 
   .section-heading {
-    font-size: 1.8rem; /* Adjust heading font size for mobile */
+    font-size: 1.8rem; 
   }
 
   .menu-section-right-col {
+  }
    
   }
   .name {
-    font-size: 1.1rem; /* Adjust name font size for mobile */
+    font-size: 1.1rem; 
   }
 
   .description {
-    font-size: 0.9rem; /* Adjust description font size for mobile */
+    font-size: 0.9rem; 
   }
-}
+
 
 /*# sourceMappingURL=output.css.map */
