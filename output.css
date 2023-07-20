@@ -427,6 +427,7 @@ Crepes
     display: flex;
     justify-content: end;
   }
+
 }
 @media only screen and (max-width: 600px) {
   h1 {
@@ -451,6 +452,41 @@ Crepes
   }
   #cta {
     margin: 4rem 0;
+  }
+  .menu-hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-hero-left-col, .menu-hero-right-col {
+    width: 100%;
+    
+  }
+
+  .menu-hero-right-col img {
+    max-width: 100%; /* Adjust hero image to full width for mobile */
+  }
+
+  .menu-section {
+    margin-top: 3rem; /* Reduce top margin for mobile */
+    margin-bottom: 3rem; /* Reduce bottom margin for mobile */
+    flex-direction: column;
+    width: 90%;
+  }
+
+
+  .section-heading {
+    font-size: 1.8rem; /* Adjust heading font size for mobile */
+  }
+
+  .menu-section-right-col {
+   
+  }
+  .name {
+    font-size: 1.1rem; /* Adjust name font size for mobile */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Adjust description font size for mobile */
   }
 }
 
