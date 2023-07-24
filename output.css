@@ -467,6 +467,7 @@ Crepes
   }
 
   .menu-section {
+    display: flex;
     margin-top: 3rem; 
     margin-bottom: 3rem; 
     flex-direction: column;
@@ -478,17 +479,18 @@ Crepes
     font-size: 1.8rem; 
   }
 
-  .menu-section-right-col {
-  }
-   
-  }
-  .name {
-    font-size: 1.1rem; 
+ 
+   .name {
+    font-size: 0.9em; 
+
   }
 
   .description {
-    font-size: 0.9rem; 
+    font-size: 0.7rem; 
+    width: 100%;
   }
 
+  }
+ 
 
 /*# sourceMappingURL=output.css.map */
