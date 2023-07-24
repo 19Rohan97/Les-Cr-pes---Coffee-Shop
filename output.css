@@ -10,7 +10,9 @@
   --light-red: #fa8d7f;
   --Poppins: "Poppins", sans-serif;
 }
-
+body {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: var(--body-text, #324a6d);
@@ -325,6 +327,8 @@ Crepes
 
 .menu-hero-right-col img {
   width: 100%;
+  min-width: 20rem;
+  margin-bottom: 1rem;
 }
 
 .menu-section {
@@ -365,10 +369,23 @@ Crepes
   font-weight: bold;
   margin: 0;
 }
-.description {
-  font-size: 0.95rem;
-  padding: 0;
+.description-flex {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  
 }
+.description-dash {
+  border-bottom: 1px dashed black;
+  width: 70%;
+  height: 2px;
+  margin-top: 2%;
+  min-width: 220px;
+}
+
+
+
+
 /**
 * Footer Styles
 */
@@ -427,6 +444,7 @@ Crepes
     display: flex;
     justify-content: end;
   }
+  
 
 }
 @media only screen and (max-width: 600px) {
@@ -453,44 +471,28 @@ Crepes
   #cta {
     margin: 4rem 0;
   }
-  .menu-hero-section {
-    display: flex;
-    flex-direction: column;
-  }
-  .menu-hero-left-col, .menu-hero-right-col {
-    width: 100%;
-    
-  }
-
-  .menu-hero-right-col img {
-    max-width: 100%; 
-  }
-
-  .menu-section {
-    display: flex;
-    margin-top: 3rem; 
-    margin-bottom: 3rem; 
-    flex-direction: column;
-    width: 90%;
-  }
-
-
-  .section-heading {
-    font-size: 1.8rem; 
-  }
-
- 
-   .name {
-    font-size: 0.9em; 
-
-  }
-
-  .description {
-    font-size: 0.7rem; 
-    width: 100%;
-  }
-
+  
   }
  
-
+  @media screen and (width < 900px){
+    .menu-section{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+      margin-left: 1.5rem;
+    }
+    .menu-hero-section {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu-hero-right-col img {
+      aspect-ratio: 1 / 1;
+      border-radius: 12px;
+    }
+    .menu-hero-left-col p {
+      width: 60vw;
+      font-size: 0.75rem;
+    }
+  }
 /*# sourceMappingURL=output.css.map */
