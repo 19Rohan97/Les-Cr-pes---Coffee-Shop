@@ -10,7 +10,9 @@
   --light-red: #fa8d7f;
   --Poppins: "Poppins", sans-serif;
 }
-
+body {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: var(--body-text, #324a6d);
@@ -325,6 +327,8 @@ Crepes
 
 .menu-hero-right-col img {
   width: 100%;
+  min-width: 20rem;
+  margin-bottom: 1rem;
 }
 
 .menu-section {
@@ -335,6 +339,7 @@ Crepes
   margin-top: 6rem;
   margin-bottom: 6rem;
   gap: 2rem;
+  margin-left: 13%;
 }
 
 .menu-section-left-col {
@@ -365,10 +370,26 @@ Crepes
   font-weight: bold;
   margin: 0;
 }
-.description {
-  font-size: 0.95rem;
-  padding: 0;
+.description-flex {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  width: 80%;
+  
+  
 }
+.description-dash {
+  border-bottom: 1px dashed black;
+  width: 100%;
+  height: 2px;
+  margin-top: 2%;
+  min-width: 220px;
+}
+
+
+
+
+
 /**
 * Footer Styles
 */
@@ -427,6 +448,7 @@ Crepes
     display: flex;
     justify-content: end;
   }
+  
 
 }
 @media only screen and (max-width: 600px) {
@@ -453,41 +475,28 @@ Crepes
   #cta {
     margin: 4rem 0;
   }
-  .menu-hero-section {
-    display: flex;
-    flex-direction: column;
+  
   }
-  .menu-hero-left-col, .menu-hero-right-col {
-    width: 100%;
-    
+ 
+  @media screen and (width < 900px){
+    .menu-section{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+      margin-left: 1.5rem;
+    }
+    .menu-hero-section {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu-hero-right-col img {
+      aspect-ratio: 1 / 1;
+      border-radius: 12px;
+    }
+    .menu-hero-left-col p {
+      width: 60vw;
+      font-size: 0.75rem;
+    }
   }
-
-  .menu-hero-right-col img {
-    max-width: 100%; /* Adjust hero image to full width for mobile */
-  }
-
-  .menu-section {
-    margin-top: 3rem; /* Reduce top margin for mobile */
-    margin-bottom: 3rem; /* Reduce bottom margin for mobile */
-    flex-direction: column;
-    width: 90%;
-  }
-
-
-  .section-heading {
-    font-size: 1.8rem; /* Adjust heading font size for mobile */
-  }
-
-  .menu-section-right-col {
-   
-  }
-  .name {
-    font-size: 1.1rem; /* Adjust name font size for mobile */
-  }
-
-  .description {
-    font-size: 0.9rem; /* Adjust description font size for mobile */
-  }
-}
-
 /*# sourceMappingURL=output.css.map */
