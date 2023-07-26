@@ -370,26 +370,10 @@ Crepes
   font-weight: bold;
   margin: 0;
 }
-.description-flex {
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-  width: 80%;
-  
-  
+.description {
+  font-size: 0.95rem;
+  padding: 0;
 }
-.description-dash {
-  border-bottom: 1px dashed black;
-  width: 100%;
-  height: 2px;
-  margin-top: 2%;
-  min-width: 220px;
-}
-
-
-
-
-
 /**
 * Footer Styles
 */
