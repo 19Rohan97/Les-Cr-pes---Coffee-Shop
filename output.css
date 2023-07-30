@@ -466,42 +466,29 @@ Crepes
  
   @media screen and (max-width : 900px){
 
-    .menu-hero-section {
+  .menu-section {
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
     flex-direction: column;
-    margin: 0;
-    }
-    .menu-hero-left-col {
-      width: 80%;
-      margin: 0 auto;
-      
-      
-    }
-    .menu-hero-right-col {
-      width: 100%;
-      
-    }
-    .menu-hero-right-col img {
-      aspect-ratio: 1 / 1;
-    
-      width: 100%;
-      padding: 1rem;
-      
-    }
-    .menu-hero-left-col p {
-      font-size: 0.75rem;
-    }
-    .menu-section {
-      grid-template-columns: 1fr; 
-      margin: 0 auto;
-    }
-    .name {
-      font-size: 0.9rem;
-      font-weight: bold;
-      margin: 0;
-    }
-    .description {
-      font-size: 0.7rem;
-      padding: 0;
-    }
+    width: 90%;
   }
+
+
+  .section-heading {
+    font-size: 1.8rem; 
+  }
+
+  .menu-section-right-col {
+  }
+   
+  }
+  .name {
+    font-size: 1.1rem; 
+  }
+
+  .description {
+    font-size: 0.9rem; 
+  }
+
+
 /*# sourceMappingURL=output.css.map */
