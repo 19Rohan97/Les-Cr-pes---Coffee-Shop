@@ -11,6 +11,9 @@
   --Poppins: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: var(--body-text, #324a6d);
@@ -325,37 +328,37 @@ Crepes
 
 .menu-hero-right-col img {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .menu-section {
   color: var(--primary, #1c2448);
   width: 80%;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 6rem;
   margin-bottom: 6rem;
   gap: 2rem;
+  margin-left: 10%;
 }
-
-.menu-section-left-col {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  
+.hot-drinks {
+  width: 100%;
 }
-.menu-section-right-col {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
 .menu-section ul {
-  padding: 0;
-  
-  
+  padding: 0; 
 }
 .section-heading {
   font-size: 2.5rem;
+}
+.menu-section-left-col {
+  display: flex;
+  flex-direction: column;
+}
+.menu-section-right-col {
+  display: flex;
+  flex-direction: column
+  
 }
 .menu-section ul li {
   list-style: none;
@@ -368,6 +371,10 @@ Crepes
 .description {
   font-size: 0.95rem;
   padding: 0;
+}
+
+.note {
+  color: #F98B7C;
 }
 /**
 * Footer Styles
@@ -427,6 +434,7 @@ Crepes
     display: flex;
     justify-content: end;
   }
+  
 
 }
 @media only screen and (max-width: 600px) {
@@ -453,21 +461,12 @@ Crepes
   #cta {
     margin: 4rem 0;
   }
-  .menu-hero-section {
-    display: flex;
-    flex-direction: column;
+  
   }
-  .menu-hero-left-col, .menu-hero-right-col {
-    width: 100%;
-    
-  }
-
-  .menu-hero-right-col img {
-    max-width: 100%; 
-  }
+ 
+  @media screen and (max-width : 900px){
 
   .menu-section {
-    display: flex;
     margin-top: 3rem; 
     margin-bottom: 3rem; 
     flex-direction: column;
@@ -479,18 +478,17 @@ Crepes
     font-size: 1.8rem; 
   }
 
- 
-   .name {
-    font-size: 0.9em; 
-
+  .menu-section-right-col {
+  }
+   
+  }
+  .name {
+    font-size: 1.1rem; 
   }
 
   .description {
-    font-size: 0.7rem; 
-    width: 100%;
+    font-size: 0.9rem; 
   }
 
-  }
- 
 
 /*# sourceMappingURL=output.css.map */
